@@ -1,0 +1,111 @@
+{{- if lt hugo.Version "0.146.0" }}
+{{- errorf "=> hugo v0.146.0 or greater is required for hugo-PaperMod to build " }}
+{{- end -}}
+
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{- partialCached "header.html" . .Page -}}
+
+    {{- /* Full-bleed banner outside main padding: show on home, or when page sets params.banner */ -}}
+    {{- $bannerImage := "" -}}
+    {{- $bannerTitle := .Title -}}
+    {{- $bannerDesc := .Description -}}
+    {{- if .IsHome -}}
+        {{- $bannerImage = (site.Params.defaultCoverImage | default "/images/hiroshima_skyline_long.jpg") -}}
+    {{- else -}}
+        {{- with .Params.banner -}}
+            {{- with .image -}}
+                {{- $bannerImage = . -}}
+            {{- else -}}
+                {{- /* If banner is a string, treat it as the image path */ -}}
+                {{- $bannerImage = $.Params.banner -}}
+            {{- end -}}
+            {{- with .title }}{{- $bannerTitle = . -}}{{- end -}}
+            {{- with .description }}{{- $bannerDesc = . -}}{{- end -}}
+        {{- end -}}
+    {{- end -}}
+
+    {{- if $bannerImage }}
+    {{- $src := $bannerImage -}}
+    {{- if not (or (hasPrefix $bannerImage "http://") (hasPrefix $bannerImage "https://")) -}}
+      {{- $src = ($bannerImage | relURL) -}}
+    {{- end -}}
+    <div class="site-hero">
+        <img src="{{ $src }}" alt="" />
+        <div class="site-hero-overlay">
+          <div class="site-hero-text">
+            <h1>{{ $bannerTitle }}</h1>
+            {{ with $bannerDesc }}<p>{{ . }}</p>{{ end }}
+          </div>
+        </div>
+    </div>
+    {{- end }}
+
+    <main class="main">
+        {{- block "main" . }}{{ end }}
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+
+    <style>
+      /* Full-bleed hero image */
+      .site-hero {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
+      .site-hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      /* Bottom overlay */
+      .site-hero-overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 33%;
+        background: rgba(17, 24, 39, 0.78); /* dark opaque */
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .site-hero-text {
+        width: 100%;
+        max-width: calc(var(--main-width) + var(--gap) * 2);
+        margin: 0 auto;
+        padding: 1rem var(--gap);
+        color: #fff;
+      }
+      .site-hero-text h1 {
+        margin: 0 0 .25rem 0;
+        color: #fff;
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+      .site-hero-text p {
+        margin: 0;
+        color: #e5e7eb; /* gray-200 */
+      }
+    </style>
+</body>
+
+</html>
+

@@ -1,0 +1,262 @@
+
+
+.footer-dark a {
+    text-decoration-color: #111827 !important; /* match footer background */
+}
+
+.header .nav a span.active,
+header .nav a span.active,
+nav.nav a span.active {
+    border-bottom: 2px solid rgb(98, 0, 234) !important;
+}
+
+/* Override theme footer to make it full width */
+.footer-dark {
+    max-width: none !important;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+}
+
+/* Conference page styling - override theme constraints */
+.conference-page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Force wider layout for conference pages */
+body:has(.conference-page) main {
+    max-width: 935px !important;
+    width: 100% !important;
+}
+
+.conference-page main {
+    max-width: 935px !important;
+    width: 100% !important;
+}
+
+/* Also override any parent containers */
+body:has(.conference-page) .main {
+    max-width: 935px !important;
+    width: 100% !important;
+}
+
+.conference-container {
+    width: 100%;
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+/* Conference info section with card styling */
+.conference-info-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    max-width: 935px;
+}
+
+.conference-info-section::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 120px;
+    height: 4px;
+    background: #cd5c5c;
+}
+
+.conference-info-section::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    width: 120px;
+    height: 4px;
+    background: #cd5c5c;
+}
+
+.conference-info-section h1 {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.conference-info-section p {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Conference content area */
+.conference-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 935px;
+}
+
+.conference-content h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgb(98, 0, 234);
+    display: inline-block;
+}
+
+/* Conference table styling */
+.conference-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: transparent;
+    table-layout: fixed;
+}
+
+/* Default 3-column width */
+.conference-content table th,
+.conference-content table td {
+    width: 33.33%;
+}
+
+/* For 2-column tables - target tables with exactly 2 columns */
+.conference-content table th:first-child:nth-last-child(2),
+.conference-content table th:first-child:nth-last-child(2) ~ th,
+.conference-content table td:first-child:nth-last-child(2),
+.conference-content table td:first-child:nth-last-child(2) ~ td {
+    width: 50% !important;
+}
+
+/* HTML table styling for 2024 multi-stream conference */
+.conference-content table.conference-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: transparent;
+    table-layout: fixed;
+}
+
+.conference-content table.conference-table th {
+    background: transparent;
+    color: rgb(98, 0, 234);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.conference-content table.conference-table td {
+    padding: 1.5rem 1rem;
+    vertical-align: top;
+    background: transparent;
+    border: none;
+    width: 50%;
+}
+
+.conference-content table.conference-table td strong {
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.conference-content table.conference-table td em {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    display: block;
+}
+
+.conference-content th {
+    background: transparent;
+    color: rgb(98, 0, 234);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.conference-content td {
+    padding: 1.5rem 1rem;
+    vertical-align: top;
+    background: transparent;
+    border: none;
+}
+
+/* Presenter name styling */
+.conference-content td strong {
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* Presentation title styling */
+.conference-content td em {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .conference-page {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .conference-info-card {
+        margin-bottom: 2rem;
+    }
+
+    .card-header {
+        padding: 1.5rem;
+    }
+
+    .conference-info-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .conference-content {
+        padding: 1.5rem;
+    }
+
+    .conference-content table {
+        font-size: 0.9rem;
+    }
+
+    .conference-content th {
+        padding: 1rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    .conference-content td {
+        padding: 1rem 0.5rem;
+    }
+
+    .conference-content td strong {
+        font-size: 0.95rem;
+    }
+
+    .conference-content td em {
+        font-size: 0.85rem;
+    }
+}
+

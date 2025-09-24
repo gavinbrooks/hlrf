@@ -1,0 +1,52 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer-dark">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <a class="footer-brand" href="{{ "" | absLangURL }}">H-LRF</a>
+      <span class="footer-copy">&copy; {{ now.Year }}</span>
+    </div>
+    <div class="footer-right">
+      {{- $currentPage := . }}
+      <ul class="footer-menu">
+        {{- range site.Menus.main }}
+        {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+        {{- $page_url:= $currentPage.Permalink | absLangURL }}
+        <li>
+          <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+            <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+              {{- .Pre }}{{- .Name -}}{{ .Post -}}
+            </span>
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </div>
+</footer>
+{{- end }}
+
+<style>
+.footer-dark {
+  background-color: #111827; /* match header */
+  color: #e5e7eb;
+}
+.footer-dark a { color: #e5e7eb; }
+.footer-dark a:visited { color: #e5e7eb; }
+.footer-dark a:hover { color: #ffffff; }
+.footer-left, .footer-right { color: #e5e7eb; }
+.footer-dark .footer-brand { font-weight: 700; margin-right: .5rem; }
+.footer-inner {
+  padding: calc((var(--footer-height) - var(--gap))/2) var(--gap);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer menu styled like header menu */
+.footer-menu { list-style: none; display: flex; gap: var(--gap); margin: 0; padding: 0; }
+.footer-menu li { margin: 0; }
+.footer-menu a, .footer-menu a:visited { color: #e5e7eb; text-decoration: none; border-bottom: none; }
+.footer-menu a:hover span { color: #ffffff; }
+.footer-menu a span.active { border-bottom: 2px solid #6200ea; }
+</style>
+

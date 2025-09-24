@@ -1,0 +1,95 @@
+baseURL = "https://h-lrf.org"
+languageCode = "en-us"
+title = "H-LRF"
+
+# PaperMod theme (clean, fast, popular)
+theme = "PaperMod"
+
+# PaperMod menu structure with dropdown support
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "conf-2025"
+    name = "2025 Conference"
+    url = "/conferences/2025/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "conferences"
+    name = "Previous Conferences"
+    url = "/conferences/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "conf-2024"
+    name = "2024 Conference"
+    url = "/conferences/2024/"
+    parent = "conferences"
+    weight = 31
+
+  [[menu.main]]
+    identifier = "conf-2023"
+    name = "2023 Conference"
+    url = "/conferences/2023/"
+    parent = "conferences"
+    weight = 32
+
+  [[menu.main]]
+    identifier = "conf-2022"
+    name = "2022 Conference"
+    url = "/conferences/2022/"
+    parent = "conferences"
+    weight = 33
+
+  [[menu.main]]
+    identifier = "conf-2021"
+    name = "2021 Conference"
+    url = "/conferences/2021/"
+    parent = "conferences"
+    weight = 34
+
+  [[menu.main]]
+    identifier = "conf-2020"
+    name = "2020 Conference"
+    url = "/conferences/2020/"
+    parent = "conferences"
+    weight = 35
+
+# Site parameters
+[params]
+  description = "Hiroshima Lexical Research Forum - Supporting early-career researchers and PhD students with help from world experts"
+  author = "H-LRF"
+  # For themes like Universal that expect a date format string
+  date_format = "January 2, 2006"
+  # Site-wide default cover image (used when a page has no cover)
+  defaultCoverImage = "/images/hiroshima_skyline_long.jpg"
+  
+  # PaperMod options
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = false
+
+  # Theme settings - disable dark mode
+  disableThemeToggle = true
+  defaultTheme = "light"
+  
+# Markup configuration for proper HTML rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
