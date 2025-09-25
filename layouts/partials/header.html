@@ -38,6 +38,17 @@
 <header class="header">
     <nav class="nav">
         <div class="nav-inner">
+            <div class="nav-toggle">
+                <button id="menu-toggle"
+                        class="menu-toggle"
+                        aria-label="Toggle navigation"
+                        aria-expanded="false"
+                        aria-controls="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
             <div class="logo">
                 {{- $label_text := (site.Params.label.text | default site.Title) }}
                 {{- if site.Title }}
@@ -72,16 +83,6 @@
             </div>
 
             <div class="nav-actions">
-                <button id="menu-toggle"
-                        class="menu-toggle"
-                        aria-label="Toggle navigation"
-                        aria-expanded="false"
-                        aria-controls="menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
                 <div class="logo-switches">
                     {{- if (not site.Params.disableThemeToggle) }}
                     <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
