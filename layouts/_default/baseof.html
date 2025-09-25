@@ -24,7 +24,7 @@
     {{- $bannerTitle := .Title -}}
     {{- $bannerDesc := .Description -}}
     {{- if .IsHome -}}
-        {{- $bannerImage = (site.Params.defaultCoverImage | default "/images/hiroshima_skyline_long.jpg") -}}
+        {{- $bannerImage = (site.Params.defaultCoverImage | default "images/hiroshima_skyline_long.jpg") -}}
     {{- else -}}
         {{- with .Params.banner -}}
             {{- with .image -}}

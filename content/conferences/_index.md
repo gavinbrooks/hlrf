@@ -1,6 +1,6 @@
 ---
 banner:
-  image: "/images/hiroshima_skyline_long.jpg"
+  image: "images/hiroshima_skyline_long.jpg"
   title: "H-LRF Conferences"
   description: "Annual conferences bringing together lexical research experts"
 type: "page"

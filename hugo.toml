@@ -73,7 +73,7 @@ theme = "PaperMod"
   # For themes like Universal that expect a date format string
   date_format = "January 2, 2006"
   # Site-wide default cover image (used when a page has no cover)
-  defaultCoverImage = "/images/hiroshima_skyline_long.jpg"
+  defaultCoverImage = "images/hiroshima_skyline_long.jpg"
   
   # PaperMod options
   ShowReadingTime = false

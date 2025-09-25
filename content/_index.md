@@ -1,7 +1,7 @@
 ---
 title: "H-LRF"
 description: "Hiroshima Lexical Research Forum"
-banner_image: "/images/hiroshima_skyline_long.jpg"
+banner_image: "images/hiroshima_skyline_long.jpg"
 ---
 
 
@@ -14,7 +14,7 @@ The Hiroshima Lexical Research Forum is a closed group for vocabulary researcher
   <div class="col-md-4">
     <div class="card card-horizontal p-3 h-100">
     	<div class="card-figure">
-        <img src="/images/gavin.webp" alt="Gavin Brooks" class="img-fluid rounded-circle committee-photo shadow-sm">
+        <img src="{{ "images/gavin.webp" | relURL }}" alt="Gavin Brooks" class="img-fluid rounded-circle committee-photo shadow-sm">
       	</div>
       <div class="card-textual">
         <h4 class="card-title"><strong>Gavin Brooks</strong></h4>
@@ -26,7 +26,7 @@ The Hiroshima Lexical Research Forum is a closed group for vocabulary researcher
   <div class="col-md-4">
     <div class="card card-horizontal p-3 h-100">
     	<div class="card-figure">
-        <img src="/images/jon.webp" alt="Jon Clenton" class="img-fluid rounded-circle committee-photo shadow-sm">
+        <img src="{{ "images/jon.webp" | relURL }}" alt="Jon Clenton" class="img-fluid rounded-circle committee-photo shadow-sm">
       	</div>
       	<div class="card-textual">
         <h4 class="card-title"><strong>Jon Clenton</strong></h4>
@@ -38,7 +38,7 @@ The Hiroshima Lexical Research Forum is a closed group for vocabulary researcher
   <div class="col-md-4">
     <div class="card card-horizontal p-3 h-100">
           <div class="card-figure">
-        <img src="/images/dan.webp" alt="Dan Hougham" class="img-fluid rounded-circle committee-photo shadow-sm">
+        <img src="{{ "images/dan.webp" | relURL }}" alt="Dan Hougham" class="img-fluid rounded-circle committee-photo shadow-sm">
       </div>
       <div class="card-textual">
         <h4 class="card-title"><strong>Dan Hougham</strong></h4>

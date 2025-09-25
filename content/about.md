@@ -1,7 +1,7 @@
 ---
 title: "About H-LRF"
 banner:
-  image: "/images/hiroshima_skyline_long.jpg"
+  image: "images/hiroshima_skyline_long.jpg"
   title: "About Us"
   description: "Supporting early-career researchers and PhD students"
 type: "page"
@@ -12,7 +12,7 @@ type: "page"
 <section class="card-section left-image">
   <div class="card-container">
     <div class="card-image">
-      <img src="/images/hiroshima.png" alt="Hiroshima" />
+      <img src="{{ "images/hiroshima.png" | relURL }}" alt="Hiroshima" />
     </div>
     <div class="card-text">
       <h2>Our Mission</h2>
@@ -25,7 +25,7 @@ type: "page"
 <section class="card-section right-image">
   <div class="card-container">
       <div class="card-image">
-      <img src="/images/atomic_domb.jpg" alt="Peace Memorial Park" />
+      <img src="{{ "images/atomic_domb.jpg" | relURL }}" alt="Peace Memorial Park" />
     </div>
     <div class="card-text">
       <h2>Our Conferences</h2>
