@@ -12,7 +12,7 @@ type: "page"
 <section class="card-section left-image">
   <div class="card-container">
     <div class="card-image">
-      <img src="{{ "images/hiroshima.png" | relURL }}" alt="Hiroshima" />
+      <img src="{{< relurl "images/hiroshima.png" >}}" alt="Hiroshima" />
     </div>
     <div class="card-text">
       <h2>Our Mission</h2>
@@ -25,7 +25,7 @@ type: "page"
 <section class="card-section right-image">
   <div class="card-container">
       <div class="card-image">
-      <img src="{{ "images/atomic_domb.jpg" | relURL }}" alt="Peace Memorial Park" />
+      <img src="{{< relurl "images/atomic_domb.jpg" >}}" alt="Peace Memorial Park" />
     </div>
     <div class="card-text">
       <h2>Our Conferences</h2>

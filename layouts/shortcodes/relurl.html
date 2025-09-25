@@ -1,0 +1,5 @@
+{{- $path := .Get 0 -}}
+{{- if not $path -}}
+  {{- errorf "relurl shortcode requires a path" -}}
+{{- end -}}
+{{- $path | relURL -}}
