@@ -22,6 +22,13 @@ hlrf/
 └── README.md            # This file
 ```
 
+## Deployment via GitHub Pages
+
+- The workflow in `.github/workflows/hugo.yml` builds and deploys the site whenever you push to `main`; you do not need to run `hugo` manually for production.
+- When the site lives at the project URL (`https://gavinbrooks.github.io/hlrf/`), keep `baseURL = "https://gavinbrooks.github.io/hlrf/"` in `hugo.toml`.
+- If you switch to the custom domain (`https://h-lrf.org/`), update `baseURL` to that value, commit, and push—GitHub Actions will redeploy automatically.
+- Leave the generated `public/` folder uncommitted; the workflow publishes the build output for you.
+
 ## Navigation Menu (from original site)
 
 - Home
