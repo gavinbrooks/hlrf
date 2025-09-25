@@ -49,4 +49,8 @@ The Hiroshima Lexical Research Forum is a closed group for vocabulary researcher
 </div>
 
 <h2 class="card-title-underline">Conferences</h2>
-We held our first H-LRF conference in 2019 on campus at Hiroshima University. While the H-LRF conference began in person, COVID made it necessary to move to an online format. The online H-LRF conference has since taken place each September over three days. We have been fortunate to hear some prestigious keynote talks, and ground-breaking and cutting-edge research some of which we've seen our members publish in leading academic journals. Our aim is to support early-career researchers and PhD students with help from world experts.
+<p>We held our first H-LRF conference in 2019 on campus at Hiroshima University. While the H-LRF conference began in person, COVID made it necessary to move to an online format. The online H-LRF conference has since taken place each September over three days. We have been fortunate to hear some prestigious keynote talks, and ground-breaking and cutting-edge research some of which we've seen our members publish in leading academic journals. Our aim is to support early-career researchers and PhD students with help from world experts.</p>
+
+<p>You can see a list of all of our previous conferences here:</p>
+
+[Previous Conferences]({{< relref "/conferences/" >}})
