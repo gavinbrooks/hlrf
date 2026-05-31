@@ -20,16 +20,22 @@ theme = "PaperMod"
     weight = 2
 
   [[menu.main]]
+    identifier = "conf-2026"
+    name = "2026 Conference"
+    url = "/conferences/2026/"
+    weight = 3
+
+  [[menu.main]]
     identifier = "conf-2025"
     name = "2025 Conference"
     url = "/conferences/2025/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     identifier = "conferences"
     name = "Previous Conferences"
     url = "/conferences/"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     identifier = "conf-2024"
