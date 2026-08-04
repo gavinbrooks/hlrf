@@ -11,19 +11,19 @@ The Hiroshima Lexical Research Forum is a closed group for vocabulary researcher
 <h2 class="card-title-underline">Organizing Committee</h2>
 
 <div class="row organizing-committee mb-5">
-  <div class="col-md-4">
+  <div class="col-md-6">
     <div class="card card-horizontal p-3 h-100">
     	<div class="card-figure">
         <img src="{{< relurl "images/gavin.webp" >}}" alt="Gavin Brooks" class="img-fluid rounded-circle committee-photo shadow-sm">
       	</div>
       <div class="card-textual">
         <h4 class="card-title"><strong>Gavin Brooks</strong></h4>
-        <p class="mb-0"><a class="text-primary" href="https://www.kyoto-su.ac.jp/faculty/professors/ffl/gavin-brooks.html" target="_blank" rel="noopener">Kyoto Sangyo University</a></p>
+        <p class="mb-0"><a class="text-primary" href="https://gyouseki.kufs.ac.jp/kufshp/KgApp?resId=S001288&amp;Language=2" target="_blank" rel="noopener">Kyoto University of Foreign Studies</a></p>
       </div>
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-6">
     <div class="card card-horizontal p-3 h-100">
     	<div class="card-figure">
         <img src="{{< relurl "images/jon.webp" >}}" alt="Jon Clenton" class="img-fluid rounded-circle committee-photo shadow-sm">
@@ -35,17 +35,6 @@ The Hiroshima Lexical Research Forum is a closed group for vocabulary researcher
     </div>
   </div>
 
-  <div class="col-md-4">
-    <div class="card card-horizontal p-3 h-100">
-          <div class="card-figure">
-        <img src="{{< relurl "images/dan.webp" >}}" alt="Dan Hougham" class="img-fluid rounded-circle committee-photo shadow-sm">
-      </div>
-      <div class="card-textual">
-        <h4 class="card-title"><strong>Dan Hougham</strong></h4>
-        <p class="mb-0"><a class="text-primary" href="https://seeds.office.hiroshima-u.ac.jp/profile/en.3b3424f4a8fc48d1520e17560c007669.html" target="_blank" rel="noopener">Hiroshima University</a></p>
-      </div>
-    </div>
-  </div>
 </div>
 
 <h2 class="card-title-underline">Conferences</h2>
