@@ -4,7 +4,7 @@ date: 2026-09-14
 banner:
   image: "images/hiroshima_skyline_long.jpg"
   title: "H-LRF 2026 Conference"
-  description: "Sunday, September 20 · 18:55–19:20 JST · Session 9"
+  description: "Sunday, September 20 · 17:55–18:20 JST · Session 9"
 type: "conference"
 build:
   list: never
@@ -46,7 +46,7 @@ build:
 <h1>Mapping Discipline-Relevant Vocabulary in Introductory Agronomy and Applied Linguistics Textbooks</h1>
 <p class="abs-people"><strong>Wakako Takinami</strong>, <span class="aff">Tottori University</span></p>
 <p class="abs-people"><span class="abs-people-label">Contributing authors:</span> <strong>Jon Clenton</strong>, <span class="aff">Hiroshima University</span>; <strong>Gavin Brooks</strong>, <span class="aff">Kyoto University of Foreign Studies</span>; <strong>Simon Fraser</strong>, <span class="aff">Hiroshima University</span>; <strong>Takeshi Fukao</strong>, <span class="aff">Fukui Prefectural University</span></p>
-<p class="abs-when">Sunday, September 20 · 18:55–19:20 JST · Session 9</p>
+<p class="abs-when">Sunday, September 20 · 17:55–18:20 JST · Session 9</p>
 </div>
 <div class="abs-body">
 <h2>Abstract</h2>

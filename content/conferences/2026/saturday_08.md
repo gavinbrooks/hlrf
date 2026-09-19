@@ -8,7 +8,7 @@ banner:
 type: "conference"
 build:
   list: never
-  render: always
+  render: never
 ---
 
 <style>

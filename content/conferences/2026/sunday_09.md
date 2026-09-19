@@ -4,7 +4,7 @@ date: 2026-09-14
 banner:
   image: "images/hiroshima_skyline_long.jpg"
   title: "H-LRF 2026 Conference"
-  description: "Sunday, September 20 · 17:55–18:20 JST · Session 9"
+  description: "Saturday, September 19 · 18:25–18:50 JST · Session 4"
 type: "conference"
 build:
   list: never
@@ -46,7 +46,7 @@ build:
 <h1>Beyond Monologues: Predicting L2 Fluency in Academic Multilogues</h1>
 <p class="abs-people"><strong>Christopher J. Hollis</strong>, <span class="aff">Hiroshima University / Tottori University</span></p>
 <p class="abs-people"><span class="abs-people-label">Contributing authors:</span> <strong>Jon Clenton</strong>, <span class="aff">Hiroshima University</span>; <strong>Gavin Brooks</strong>, <span class="aff">Kyoto University of Foreign Studies</span>; <strong>Jen Jordan</strong>, <span class="aff">Kwansei Gakuin University</span>; <strong>Daniel Hougham</strong>, <span class="aff">Hiroshima University</span></p>
-<p class="abs-when">Sunday, September 20 · 17:55–18:20 JST · Session 9</p>
+<p class="abs-when">Saturday, September 19 · 18:25–18:50 JST · Session 4</p>
 </div>
 <div class="abs-body">
 <h2>Abstract</h2>
