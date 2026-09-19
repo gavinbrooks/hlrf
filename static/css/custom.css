@@ -260,19 +260,16 @@ body:has(.conference-page) .main {
     }
 }
 
-/* Conference-videos and organizing-committee blocks at the foot of each conference page */
-.conference-videos,
+/* Organizing-committee credit at the foot of each conference page */
 .conference-organizers {
   margin-top: 2.5rem;
   padding-top: 1.25rem;
   border-top: 1px solid #ececf3;
 }
-.conference-videos h2,
 .conference-organizers h2 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
 }
-.conference-videos p,
 .conference-organizers p {
   margin: 0;
   line-height: 1.6;
@@ -282,11 +279,23 @@ body:has(.conference-page) .main {
   font-weight: 600;
   color: #222;
 }
-.conference-videos p a {
+/* Conference-videos paragraph inside the intro card (conference_videos shortcode) */
+.conference-info-section .conference-videos {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #ececf3;
+}
+.conference-info-section .conference-videos h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.conference-info-section .conference-videos p a {
   color: rgb(98, 0, 234);
   font-weight: 600;
   text-decoration: none;
 }
-.conference-videos p a:hover {
+.conference-info-section .conference-videos p a:hover {
   text-decoration: underline;
 }
