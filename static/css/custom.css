@@ -260,3 +260,22 @@ body:has(.conference-page) .main {
     }
 }
 
+/* Organizing-committee credit at the foot of each conference page */
+.conference-organizers {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #ececf3;
+}
+.conference-organizers h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+.conference-organizers p {
+  margin: 0;
+  line-height: 1.6;
+  color: #444;
+}
+.conference-organizers .organizer-name {
+  font-weight: 600;
+  color: #222;
+}

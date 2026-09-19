@@ -5,6 +5,17 @@
     <!-- Conference Content -->
     <div class="conference-content">
       {{ .Content }}
+      {{- with .Params.organizers }}
+      {{- $n := len . }}
+      <div class="conference-organizers">
+        <h2>Organizing Committee</h2>
+        <p>The {{ $.Params.conference_year | default $.Date.Year }} H-LRF Conference was organized by
+          {{- range $i, $name := . -}}
+            {{- if eq $i 0 }} {{ else if eq $i (sub $n 1) }}{{ if gt $n 2 }},{{ end }} and {{ else }}, {{ end -}}
+            <span class="organizer-name">{{ $name }}</span>
+          {{- end -}}.</p>
+      </div>
+      {{- end }}
     </div>
   </div>
 </div>
