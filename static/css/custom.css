@@ -82,6 +82,18 @@ body:has(.conference-page) .main {
     background: #cd5c5c;
 }
 
+/* Variant: accent rule sits above the Conference Videos block instead of at the card foot */
+.conference-info-section.rule-above-videos::after {
+    content: none;
+}
+
+.conference-info-section .section-rule {
+    width: 120px;
+    height: 4px;
+    background: #cd5c5c;
+    margin: 1.5rem -2rem 0 auto;
+}
+
 .conference-info-section h1 {
     margin: 0 0 1rem 0;
     color: #333;
