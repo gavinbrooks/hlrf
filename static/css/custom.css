@@ -87,6 +87,11 @@ body:has(.conference-page) .main {
     content: none;
 }
 
+.conference-info-section.rule-above-videos {
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
 .conference-info-section .section-rule {
     width: 120px;
     height: 4px;
