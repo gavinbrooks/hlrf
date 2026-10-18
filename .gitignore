@@ -8,3 +8,22 @@ resources/
 
 # Hugo server cache
 dist/
+
+# --- TBD deletion-staging quarantine (any depth) ---
+# Gavin, 2026-10-18: anywhere under ~/code, at ANY depth, a folder whose name
+# contains tbd/TBD in any capitalisation is deletion staging -- things moved
+# aside for him to review and delete himself. `_tbd` is the usual spelling;
+# the pattern matches the variants (_tbd/ _TBD/ TBD/ tbd/ 2026-10-17_TBD_x/).
+# Never commit or push its contents, whatever their size.
+#
+# The folder's CONTENTS are excluded, not the folder, so its README.md
+# deletion register stays trackable -- ~/code/CLAUDE.md requires a line there
+# for every item moved in. Git cannot re-include a file under an excluded
+# *directory*, hence `dir/*` + a negation rather than `dir/`.
+#
+# Scope: ~/code only. The _tbd/ dirs in agent_brain and agent_research are a
+# DIFFERENT thing sharing the name -- the OK app syncs those vaults and their
+# _tbd/ records are tracked on purpose. Never add this to ~/.gitignore_global.
+# Detail: agent_brain wiki/systems/git-sync-tbd-convention.md
+**/*[tT][bB][dD]*/*
+!**/*[tT][bB][dD]*/README.md
